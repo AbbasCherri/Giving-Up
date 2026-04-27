@@ -31,7 +31,6 @@ public class Manny_Move : MonoBehaviour
                 agent.speed = 6f;
             }
         }
-        if(CompareTag("Player"))
 
     }
 }
