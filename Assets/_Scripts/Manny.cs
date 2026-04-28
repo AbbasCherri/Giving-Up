@@ -11,21 +11,23 @@ public class Manny : MonoBehaviour
     
     [SerializeField] public NavMeshAgent agent;
     [SerializeField] public AudioClip explosionSound;
-    public Transform player;
+    [SerializeField] public Transform playerPos;
+    private Player player;
     public Animator animator;
     public GameObject explosion;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        player = playerPos.GetComponent<Player>();
     }
     void Update()
     {
-        float distance = Vector3.Distance(transform.position, player.position);
+        float distance = Vector3.Distance(transform.position, playerPos.position);
         animator.SetFloat("speed",agent.velocity.magnitude);
         if (distance < 10f)
         {
-            agent.SetDestination(player.position);
+            agent.SetDestination(playerPos.position);
             if (distance>5f)
             {
                 agent.speed = 3.5f;
@@ -48,6 +50,10 @@ public class Manny : MonoBehaviour
         Vector3 offset = new Vector3(0, 1.5f, 0);
         Instantiate(explosion, transform.position + offset, transform.rotation);
         Audio.Instance.PlaySound(explosionSound);
+        if (player)
+        {
+            player.TakeDamage(2);
+        }
         Destroy(gameObject);
     }
 }

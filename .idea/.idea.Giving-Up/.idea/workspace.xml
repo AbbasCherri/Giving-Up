@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="799218c7-1306-40f0-b390-ea77ffb8921c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Giving-Up/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giving-Up/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Manny.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Manny.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f2\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="E:\Unity\Hub\Editor\2022.3.62f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath D:\HadiTemp\Projects\Giving-Up -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\HadiTemp\Projects\Giving-Up" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -54,7 +54,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.62f2\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="E:\Unity\Hub\Editor\2022.3.62f2\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath D:\HadiTemp\Projects\Giving-Up -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="D:\HadiTemp\Projects\Giving-Up" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -90,6 +90,7 @@
       <workItem from="1776768400265" duration="452000" />
       <workItem from="1776769063214" duration="1453000" />
       <workItem from="1777241001764" duration="276000" />
+      <workItem from="1777365441379" duration="1579000" />
     </task>
     <servers />
   </component>
