@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3576254573916965739}
   - component: {fileID: 6132407540934450447}
   - component: {fileID: 6740829451486380258}
+  - component: {fileID: 2758697193645728361}
   m_Layer: 8
   m_Name: PlayerCapsule
   m_TagString: Player
@@ -77,8 +78,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55919ac34a26952479f3fc91f777b2fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   MoveSpeed: 4
   SprintSpeed: 6
   RotationSpeed: 1
@@ -231,6 +232,27 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &2758697193645728361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528538018141908214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fd8d4fdaf3b4d04ba90f0eb7c487ee2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  leftHand: {fileID: 8575593341461201499}
+  rightHand: {fileID: 2979980680772518831}
+  playerCamera: {fileID: 0}
+  firstPersonController: {fileID: 4789834484383587402}
+  input: {fileID: 6132407540934450447}
+  climbSpeed: 3.5
+  maxReach: 2.2
+  reachCorrectionStrength: 16
+  anchoredGravity: -0.75
 --- !u!1 &2346996974039588495
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +395,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6666e83fc26524f9c9d515c4676c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whichHand: 1
+  playerCamera: {fileID: 0}
+  grabDistance: 3
+  aimDistance: 25
+  surfaceOffset: 0.02
+  grabbableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  animator: {fileID: 7812825992123873269}
+  handBob: {fileID: 8305435218116726801}
 --- !u!114 &8305435218116726801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,9 +559,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 6472420014258660187}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fdedcb0343188c74a82145cc78c68bed, type: 3}
+  m_Script: {fileID: 11500000, guid: ec6666e83fc26524f9c9d515c4676c6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whichHand: 0
+  playerCamera: {fileID: 0}
+  grabDistance: 3
+  aimDistance: 25
+  surfaceOffset: 0.02
+  grabbableLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  animator: {fileID: 1070664692423003059}
+  handBob: {fileID: 4041384376619259279}
 --- !u!114 &4041384376619259279
 MonoBehaviour:
   m_ObjectHideFlags: 0

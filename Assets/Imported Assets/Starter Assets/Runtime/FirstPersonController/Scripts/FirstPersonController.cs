@@ -20,6 +20,8 @@ namespace StarterAssets
 		public float RotationSpeed = 1.0f;
 		[Tooltip("Acceleration and deceleration")]
 		public float SpeedChangeRate = 10.0f;
+		[Tooltip("Disables built-in walking, jumping, and gravity while external movement handles the character.")]
+		public bool ExternalMovementActive;
 
 		[Space(10)]
 		[Tooltip("The height the player can jump")]
@@ -41,7 +43,7 @@ namespace StarterAssets
 		[Tooltip("The radius of the grounded check. Should match the radius of the CharacterController")]
 		public float GroundedRadius = 0.5f;
 		[Tooltip("What layers the character uses as ground")]
-		public LayerMask GroundLayers;
+		[SerializeField]  LayerMask GroundLayers;
 
 		[Header("Cinemachine")]
 		[Tooltip("The follow target set in the Cinemachine Virtual Camera that the camera will follow")]
@@ -112,6 +114,13 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			if (ExternalMovementActive)
+			{
+				_verticalVelocity = 0.0f;
+				_speed = 0.0f;
+				return;
+			}
+
 			JumpAndGravity();
 			GroundedCheck();
 			Move();
