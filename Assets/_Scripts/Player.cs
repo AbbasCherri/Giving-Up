@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     [SerializeField] public int health;
+
+    [SerializeField] private AudioClip clip;
     // Start is called before the first frame update
 
     // Update is called once per frame
@@ -19,6 +21,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        Audio.Instance.PlaySound(clip);
         this.health -= damage;
     }
 }

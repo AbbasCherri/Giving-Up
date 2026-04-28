@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="799218c7-1306-40f0-b390-ea77ffb8921c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Giving-Up/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Giving-Up/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Imported Assets/Starter Assets/Runtime/FirstPersonController/Scripts/FirstPersonController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Imported Assets/Starter Assets/Runtime/FirstPersonController/Scripts/FirstPersonController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerCapsule.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerCapsule.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Hand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Game/NavMesh-Floor.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Game/NavMesh-Floor.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scripts/Player.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +93,7 @@
       <workItem from="1776769063214" duration="1453000" />
       <workItem from="1777241001764" duration="276000" />
       <workItem from="1777365441379" duration="1579000" />
-      <workItem from="1777382421067" duration="11369000" />
+      <workItem from="1777382421067" duration="14106000" />
     </task>
     <servers />
   </component>
