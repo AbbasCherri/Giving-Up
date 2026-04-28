@@ -46,17 +46,17 @@ PrefabInstance:
     - target: {fileID: 2241812939186624006, guid: 749f7d8811766f247a3d15c5f047eed3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.95
+      value: 12.930809
       objectReference: {fileID: 0}
     - target: {fileID: 2241812939186624006, guid: 749f7d8811766f247a3d15c5f047eed3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.52
+      value: 1.000001
       objectReference: {fileID: 0}
     - target: {fileID: 2241812939186624006, guid: 749f7d8811766f247a3d15c5f047eed3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5308185
+      value: 12.182997
       objectReference: {fileID: 0}
     - target: {fileID: 2241812939186624006, guid: 749f7d8811766f247a3d15c5f047eed3,
         type: 3}
@@ -137,7 +137,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 8318460321679360656}
   explosionSound: {fileID: 8300000, guid: 8132d0bae0353d94db6cd42361f542e6, type: 3}
-  player: {fileID: 2886431995386961968, guid: b9ce3ef5819702045afa81d5668d854c, type: 3}
+  playerPos: {fileID: 2886431995386961968, guid: b9ce3ef5819702045afa81d5668d854c,
+    type: 3}
   animator: {fileID: 6369445150966238105}
   explosion: {fileID: 8772499674234975394, guid: 7022822421200cb49985d9433dba100c,
     type: 3}
