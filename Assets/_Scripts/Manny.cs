@@ -12,6 +12,7 @@ public class Manny : MonoBehaviour
     [SerializeField] public NavMeshAgent agent;
     [SerializeField] public AudioClip explosionSound;
     [SerializeField] public Transform playerPos;
+    
     private Player player;
     public Animator animator;
     public GameObject explosion;

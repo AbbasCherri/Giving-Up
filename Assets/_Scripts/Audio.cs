@@ -7,6 +7,7 @@ public class Audio : MonoBehaviour
     public static Audio Instance;
     void Awake()
     {
+
         if(Instance != null &&  Instance != this)
         {
             Destroy(this.gameObject);
@@ -21,4 +22,5 @@ public class Audio : MonoBehaviour
     {
         AudioSource.PlayClipAtPoint(clip, transform.position);
     }
+    
 }

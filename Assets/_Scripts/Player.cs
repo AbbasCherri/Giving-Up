@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,10 +8,14 @@ public class Player : MonoBehaviour
 {
     [SerializeField] public int health;
 
-    [SerializeField] private AudioClip clip;
-    // Start is called before the first frame update
+    [SerializeField] private AudioClip[] clips;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
+
     void Update()
     {
         if (health <= 0)
@@ -21,7 +26,7 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Audio.Instance.PlaySound(clip);
+        Audio.Instance.PlaySound(clips[0]);
         this.health -= damage;
     }
 }
