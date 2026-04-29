@@ -50,7 +50,6 @@ public class Manny : MonoBehaviour
     {
         Vector3 offset = new Vector3(0, 1.5f, 0);
         Instantiate(explosion, transform.position + offset, transform.rotation);
-        Audio.Instance.PlaySound(explosionSound);
         Destroy(gameObject);
         if (player)
         {

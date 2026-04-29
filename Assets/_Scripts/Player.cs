@@ -8,8 +8,6 @@ public class Player : MonoBehaviour
 {
     [SerializeField] public int health;
 
-    [SerializeField] private AudioClip[] clips;
-
     private void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -26,7 +24,6 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
-        Audio.Instance.PlaySound(clips[0]);
         this.health -= damage;
     }
 }

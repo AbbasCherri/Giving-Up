@@ -8,23 +8,17 @@ public class Hand : MonoBehaviour
         Left = 0,
         Right = 1
     }
-
-    [Header("Input")]
+    
     [SerializeField] private WhichHand whichHand;
-
-    [Header("Grab")]
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float grabDistance = 3f;
     [SerializeField] private float aimDistance = 25f;
     [SerializeField] private float surfaceOffset = 0.02f;
     [SerializeField] private LayerMask grabbableLayer;
-
-    [Header("References")]
     [SerializeField] private Animator animator;
     [SerializeField] private HandBob handBob;
 
-    private static readonly int IsHolding = Animator.StringToHash("isHolding");
-
+    private static int IsHolding = Animator.StringToHash("isHolding");
     private Vector3 startLocalPosition;
     private Quaternion startLocalRotation;
     private Vector3 startLocalScale;
