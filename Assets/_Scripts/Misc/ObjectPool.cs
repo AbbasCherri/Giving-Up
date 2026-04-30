@@ -18,14 +18,7 @@ public class ObjectPool : MonoBehaviour
     
     private void Awake()
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
+        // Singleton did not save the explosions so i decided to just make a new one here
         pooldic = new Dictionary<string, Queue<GameObject>>();
         foreach (Pool pool in Poolsi)
         {
@@ -44,7 +37,6 @@ public class ObjectPool : MonoBehaviour
     {
         if (!pooldic.ContainsKey(tag))
         {
-            Debug.LogError("Pool doesn't contain tag " + tag);
             return null;
         }
 
@@ -79,7 +71,6 @@ public class ObjectPool : MonoBehaviour
                 return pool.prefab;
         }
 
-        Debug.LogError("Prefab not found for tag " + tag);
         return null;
     }
     
