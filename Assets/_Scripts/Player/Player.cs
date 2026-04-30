@@ -59,7 +59,6 @@ public class Player : MonoBehaviour
                 Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
                 if(Physics.Raycast(ray,out RaycastHit hit, 3f))
                 {
-                    Debug.Log("this part is working");
                     note = hit.collider.GetComponentInParent<Note>();
                     if (note)
                     {

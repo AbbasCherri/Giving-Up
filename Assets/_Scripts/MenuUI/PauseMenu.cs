@@ -47,6 +47,14 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
+    public void StopMusic()
+    {
+        AudioManager.Instance.StopSound("Music");
+    }
+    public void StartMusic()
+    {
+        AudioManager.Instance.PlaySound("Music");
+    }
 
     public void QuitGame()
     {
