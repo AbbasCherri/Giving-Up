@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Fasty
   m_EditorClassIdentifier: 
   walkSpeed: 4
-  runSpeed: 6
+  runSpeed: 7
   damage: 2
   detectionRange: 20
   chaseRange: 10
