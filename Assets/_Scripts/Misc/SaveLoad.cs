@@ -15,14 +15,12 @@ public class SaveLoad
         data.position = player.transform.position;
         string json = JsonUtility.ToJson(data);
         File.WriteAllText(path, json);
-        Debug.Log("Saved PlayerData" + path);
     }
 
     public static PlayerData Load()
     {
         if (!File.Exists(path))
         {
-            Debug.LogWarning("No save file found");
             return null;
         }
 

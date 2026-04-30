@@ -18,6 +18,7 @@ public class ObjectPool : MonoBehaviour
     
     private void Awake()
     {
+        Instance = this;
         // Singleton did not save the explosions so i decided to just make a new one here
         pooldic = new Dictionary<string, Queue<GameObject>>();
         foreach (Pool pool in Poolsi)
